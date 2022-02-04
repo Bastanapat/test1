@@ -12,15 +12,68 @@ class myproject(Ui_MainWindow):
         self.date()
         self.tm()
         self.gcn()
-        self.graph()
+        self.graphtemp1()
+        
 
-    def graph(self):
-        self.mygraph=pg.PlotWidget(self.tab)
-        self.mygraph.setGeometry(QtCore.QRect(310,390,471,261))
+    def graphtemp1(self):
+        ##Main
+        self.mygraph=pg.PlotWidget(MainWindow)
+        self.mygraph.setGeometry(QtCore.QRect(15,411,821,281))
         self.x1 = np.arange(100)
         self.y1= np.arange(100)
-        self.dataline= self.mygraph.plot()  
+        self.dataline= self.mygraph.plot()
+        ##temp1
+        self.mygraph=pg.PlotWidget(self.tab_6)
+        self.mygraph.setGeometry(QtCore.QRect(10,80,561,291))
+        self.x1 = np.arange(100)
+        self.y1= np.arange(100)
+        self.dataline= self.mygraph.plot() 
+        ##temp2
+        self.mygraph=pg.PlotWidget(self.tab_6)
+        self.mygraph.setGeometry(QtCore.QRect(590,80,561,291))
+        self.x1 = np.arange(100)
+        self.y1= np.arange(100)
+        self.dataline= self.mygraph.plot()
+        ##temp3
+        self.mygraph=pg.PlotWidget(self.tab_6)
+        self.mygraph.setGeometry(QtCore.QRect(10,390,561,291))
+        self.x1 = np.arange(100)
+        self.y1= np.arange(100)
+        self.dataline= self.mygraph.plot()   
+        ##temp4
+        self.mygraph=pg.PlotWidget(self.tab_6)
+        self.mygraph.setGeometry(QtCore.QRect(590,390,561,291))
+        self.x1 = np.arange(100)
+        self.y1= np.arange(100)
+        self.dataline= self.mygraph.plot()
+        ##temp5
+        self.mygraph=pg.PlotWidget(self.tab_5)
+        self.mygraph.setGeometry(QtCore.QRect(10,80,561,291))
+        self.x1 = np.arange(100)
+        self.y1= np.arange(100)
+        self.dataline= self.mygraph.plot() 
+        ##temp6
+        self.mygraph=pg.PlotWidget(self.tab_5)
+        self.mygraph.setGeometry(QtCore.QRect(590,80,561,291))
+        self.x1 = np.arange(100)
+        self.y1= np.arange(100)
+        self.dataline= self.mygraph.plot()
+        ##temp7
+        self.mygraph=pg.PlotWidget(self.tab_5)
+        self.mygraph.setGeometry(QtCore.QRect(10,390,561,291))
+        self.x1 = np.arange(100)
+        self.y1= np.arange(100)
+        self.dataline= self.mygraph.plot()   
+        ##temp8
+        self.mygraph=pg.PlotWidget(self.tab_5)
+        self.mygraph.setGeometry(QtCore.QRect(590,390,561,291))
+        self.x1 = np.arange(100)
+        self.y1= np.arange(100)
+        self.dataline= self.mygraph.plot() 
 
+
+    
+        
 
     def gcn(self):
         print('Ok')
