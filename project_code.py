@@ -12,7 +12,9 @@ class myproject(Ui_MainWindow):
         self.date()
         self.tm()
         self.gcn()
-        
+        self.graph()
+
+    def graph(self):
         self.mygraph=pg.PlotWidget(self.tab)
         self.mygraph.setGeometry(QtCore.QRect(310,390,471,261))
         self.x1 = np.arange(100)
@@ -21,10 +23,7 @@ class myproject(Ui_MainWindow):
 
 
     def gcn(self):
-        self.tabWidget.tabBarClicked.connect(self.tab_1)    
-    
-    def tab_1(self):
-        print("a")
+        pass  
         
 
 
