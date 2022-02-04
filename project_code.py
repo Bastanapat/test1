@@ -17,7 +17,7 @@ class myproject(Ui_MainWindow):
         self.mygraph.setGeometry(QtCore.QRect(310,390,471,261))
         self.x1 = np.arange(100)
         self.y1= np.arange(100)
-        self.dataline= self.mygraph.plot()  
+        self.dataline= self.mygraph.plot()  #ghf
 
 
     def gcn(self):
