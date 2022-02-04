@@ -1,9 +1,12 @@
+from tkinter import Y
+from turtle import color
 from PyQt5 import QtCore, QtGui, QtWidgets
 from project import Ui_MainWindow
 from datetime import datetime
 import sys
 import pyqtgraph as pg
 import numpy as np
+
 app = QtWidgets.QApplication(sys.argv)
 MainWindow = QtWidgets.QMainWindow()
 class myproject(Ui_MainWindow):
@@ -17,78 +20,88 @@ class myproject(Ui_MainWindow):
 
     def graphtemp1(self):
         ##Main
-        self.mygraph=pg.PlotWidget(MainWindow)
-        self.mygraph.setGeometry(QtCore.QRect(15,411,821,281))
+        self.mygraph=pg.PlotWidget(self.tab)
+        self.mygraph.setGeometry(QtCore.QRect(15,411,831,291))
         self.x1 = np.arange(100)
         self.y1= np.arange(100)
+        self.mygraph.setYRange(0,100)
+        self.mygraph.setTitle("Temperature and Humidity vs Time",color='r',size='15pt')
+        self.mygraph.setLabel("left", "Temperature (°C) and Humidity (%)")
+        self.mygraph.setLabel("bottom", "Time (s)")
         self.dataline= self.mygraph.plot()
         ##temp1
-        self.mygraph=pg.PlotWidget(self.tab_6)
-        self.mygraph.setGeometry(QtCore.QRect(10,80,561,291))
+        self.mygraph1=pg.PlotWidget(self.tab_6)
+        self.mygraph1.setGeometry(QtCore.QRect(10,80,561,291))
         self.x1 = np.arange(100)
         self.y1= np.arange(100)
-        self.dataline= self.mygraph.plot() 
+        self.mygraph1.setYRange(0,100)
+        self.mygraph1.setTitle("Temp and RH in 1 hour",color=(170, 85, 0),size='15pt')
+        self.mygraph1.setLabel("left", "Temperature (°C) and Humidity (%)")
+        self.mygraph1.setLabel("bottom", "Time (s)")
+        self.dataline= self.mygraph1.plot() 
         ##temp2
-        self.mygraph=pg.PlotWidget(self.tab_6)
-        self.mygraph.setGeometry(QtCore.QRect(590,80,561,291))
+        self.mygraph2=pg.PlotWidget(self.tab_6)
+        self.mygraph2.setGeometry(QtCore.QRect(590,80,561,291))
         self.x1 = np.arange(100)
         self.y1= np.arange(100)
-        self.dataline= self.mygraph.plot()
+        self.mygraph2.setYRange(0,100)
+        self.mygraph2.setTitle("Temp and RH in 1 week",color=(170, 85, 0),size='15pt')
+        self.mygraph2.setLabel("left", "Temperature (°C) and Humidity (%)")
+        self.mygraph2.setLabel("bottom", "Time (s)")
+        self.dataline= self.mygraph2.plot()
         ##temp3
-        self.mygraph=pg.PlotWidget(self.tab_6)
-        self.mygraph.setGeometry(QtCore.QRect(10,390,561,291))
+        self.mygraph3=pg.PlotWidget(self.tab_6)
+        self.mygraph3.setGeometry(QtCore.QRect(10,390,561,291))
         self.x1 = np.arange(100)
         self.y1= np.arange(100)
-        self.dataline= self.mygraph.plot()   
+        self.mygraph3.setYRange(0,100)
+        self.dataline= self.mygraph3.plot()   
         ##temp4
-        self.mygraph=pg.PlotWidget(self.tab_6)
-        self.mygraph.setGeometry(QtCore.QRect(590,390,561,291))
+        self.mygraph4=pg.PlotWidget(self.tab_6)
+        self.mygraph4.setGeometry(QtCore.QRect(590,390,561,291))
         self.x1 = np.arange(100)
         self.y1= np.arange(100)
-        self.dataline= self.mygraph.plot()
+        self.mygraph4.setYRange(0,100)
+        self.dataline= self.mygraph4.plot()
         ##temp5
-        self.mygraph=pg.PlotWidget(self.tab_5)
-        self.mygraph.setGeometry(QtCore.QRect(10,80,561,291))
+        self.mygraph5=pg.PlotWidget(self.tab_5)
+        self.mygraph5.setGeometry(QtCore.QRect(10,80,561,291))
         self.x1 = np.arange(100)
         self.y1= np.arange(100)
-        self.dataline= self.mygraph.plot() 
+        self.mygraph5.setYRange(0,100)
+        self.dataline= self.mygraph5.plot() 
         ##temp6
-        self.mygraph=pg.PlotWidget(self.tab_5)
-        self.mygraph.setGeometry(QtCore.QRect(590,80,561,291))
+        self.mygraph6=pg.PlotWidget(self.tab_5)
+        self.mygraph6.setGeometry(QtCore.QRect(590,80,561,291))
         self.x1 = np.arange(100)
         self.y1= np.arange(100)
-        self.dataline= self.mygraph.plot()
+        self.mygraph6.setYRange(0,100)
+        self.dataline= self.mygraph6.plot()
         ##temp7
-        self.mygraph=pg.PlotWidget(self.tab_5)
-        self.mygraph.setGeometry(QtCore.QRect(10,390,561,291))
+        self.mygraph7=pg.PlotWidget(self.tab_5)
+        self.mygraph7.setGeometry(QtCore.QRect(10,390,561,291))
         self.x1 = np.arange(100)
         self.y1= np.arange(100)
-        self.dataline= self.mygraph.plot()   
+        self.mygraph7.setYRange(0,100)
+        self.dataline= self.mygraph7.plot()   
         ##temp8
-        self.mygraph=pg.PlotWidget(self.tab_5)
-        self.mygraph.setGeometry(QtCore.QRect(590,390,561,291))
+        self.mygraph8=pg.PlotWidget(self.tab_5)
+        self.mygraph8.setGeometry(QtCore.QRect(590,390,561,291))
         self.x1 = np.arange(100)
         self.y1= np.arange(100)
-        self.dataline= self.mygraph.plot() 
+        self.mygraph8.setYRange(0,100)
+        self.dataline= self.mygraph8.plot() 
 
-
-    
-        
 
     def gcn(self):
         print('Ok')
         pass  
-        
-
-
-        
-
+    
     def tm(self):
         self.mytm1=QtCore.QTimer() 
         self.mytm1.timeout.connect(self.date)
         self.mytm1.setInterval(1000)
         self.mytm1.start()
-
 
     def date(self):
         self.now_1 = datetime.now()
