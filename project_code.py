@@ -23,6 +23,7 @@ class myproject(Ui_MainWindow):
 
 
     def gcn(self):
+        print('Ok')
         pass  
         
 
