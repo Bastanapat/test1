@@ -55,6 +55,9 @@ class myproject(Ui_MainWindow):
         self.x1 = np.arange(100)
         self.y1= np.arange(100)
         self.mygraph3.setYRange(0,100)
+        self.mygraph3.setTitle("Temp and RH in 1 month",color=(170, 85, 0),size='15pt')
+        self.mygraph3.setLabel("left", "Temperature (°C) and Humidity (%)")
+        self.mygraph3.setLabel("bottom", "Time (s)")
         self.dataline= self.mygraph3.plot()   
         ##temp4
         self.mygraph4=pg.PlotWidget(self.tab_6)
@@ -62,6 +65,9 @@ class myproject(Ui_MainWindow):
         self.x1 = np.arange(100)
         self.y1= np.arange(100)
         self.mygraph4.setYRange(0,100)
+        self.mygraph4.setTitle("Temp and RH in 1 year",color=(170, 85, 0),size='15pt')
+        self.mygraph4.setLabel("left", "Temperature (°C) and Humidity (%)")
+        self.mygraph4.setLabel("bottom", "Time (s)")
         self.dataline= self.mygraph4.plot()
         ##temp5
         self.mygraph5=pg.PlotWidget(self.tab_5)
@@ -69,6 +75,9 @@ class myproject(Ui_MainWindow):
         self.x1 = np.arange(100)
         self.y1= np.arange(100)
         self.mygraph5.setYRange(0,100)
+        self.mygraph5.setTitle("Temp and RH in 1 hour",color=(170, 85, 0),size='15pt')
+        self.mygraph5.setLabel("left", "Temperature (°C) and Humidity (%)")
+        self.mygraph5.setLabel("bottom", "Time (s)")
         self.dataline= self.mygraph5.plot() 
         ##temp6
         self.mygraph6=pg.PlotWidget(self.tab_5)
@@ -76,6 +85,9 @@ class myproject(Ui_MainWindow):
         self.x1 = np.arange(100)
         self.y1= np.arange(100)
         self.mygraph6.setYRange(0,100)
+        self.mygraph6.setTitle("Temp and RH in 1 week",color=(170, 85, 0),size='15pt')
+        self.mygraph6.setLabel("left", "Temperature (°C) and Humidity (%)")
+        self.mygraph6.setLabel("bottom", "Time (s)")
         self.dataline= self.mygraph6.plot()
         ##temp7
         self.mygraph7=pg.PlotWidget(self.tab_5)
@@ -83,6 +95,9 @@ class myproject(Ui_MainWindow):
         self.x1 = np.arange(100)
         self.y1= np.arange(100)
         self.mygraph7.setYRange(0,100)
+        self.mygraph7.setTitle("Temp and RH in 1 month",color=(170, 85, 0),size='15pt')
+        self.mygraph7.setLabel("left", "Temperature (°C) and Humidity (%)")
+        self.mygraph7.setLabel("bottom", "Time (s)")
         self.dataline= self.mygraph7.plot()   
         ##temp8
         self.mygraph8=pg.PlotWidget(self.tab_5)
@@ -90,6 +105,9 @@ class myproject(Ui_MainWindow):
         self.x1 = np.arange(100)
         self.y1= np.arange(100)
         self.mygraph8.setYRange(0,100)
+        self.mygraph8.setTitle("Temp and RH in 1 year",color=(170, 85, 0),size='15pt')
+        self.mygraph8.setLabel("left", "Temperature (°C) and Humidity (%)")
+        self.mygraph8.setLabel("bottom", "Time (s)")
         self.dataline= self.mygraph8.plot() 
 
 
